@@ -1,16 +1,21 @@
 USTH ICT 2023 Android Application Development
-=====================================================
+==============================================
+Project: 29
+============
 
-Students are expected to:
+Nasa Mobile Client
 
-* Fork this repository to your github account
-* Update student name and ID to this README file
-* Push your commits regularly, with proper commit messages
-
-Student Info
+Members of the project:
 =======================
 
-* Name: *Nguyễn Trịnh Bảo Trung*
-* ID: *BI11-275*
-* Group ID: *Your Group ID here*
+* Student's Names & IDs:
+
+*Nguyễn Trịnh Bảo Trung - BI11-275*
+*Nguyễn Thành Trung - BI11-274*
+*Phạm Đức Minh - BA11-073*
+*Vi Văn Chiến - BA11-014*
+*Đỗ Thành Đạt - BI9-065*
+*Đỗ Minh Hoàng - BA11-045*
+
+* Group ID: *27*
 
