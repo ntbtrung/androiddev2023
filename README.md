@@ -19,3 +19,6 @@ Members of the project:
 
 * Group ID: *27*
 
+Figma Design link:
+===================
+https://bit.ly/androiddev2023-g27-figmadesign
