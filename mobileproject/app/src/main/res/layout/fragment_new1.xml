@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".new1"
+    android:layout_marginVertical="20dp"
+    android:layout_marginHorizontal="10dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/new11"
+            android:contentDescription="imageButton"
+            android:id="@+id/new1"
+            android:onClick="this"
+            tools:ignore="OnClick"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
