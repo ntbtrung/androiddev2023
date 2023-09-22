@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Newpage"
+    android:orientation="vertical"
+    android:id="@+id/Newpage"
+    android:background="#29274C"
+    >
+
+    <include layout="@layout/fragment_toolbar_child_page"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include layout="@layout/fragment_firstrow_newpage" />
+
+        <include layout="@layout/fragment_firstrow_newpage"/>
+    </LinearLayout>
+    </HorizontalScrollView>
+    <include layout="@layout/fragment_second_row_newpage"/>
+
+
+
+
+  </LinearLayout>

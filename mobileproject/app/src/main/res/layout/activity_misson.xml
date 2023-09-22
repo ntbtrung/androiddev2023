@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MissonActivity"
+    android:orientation="vertical"
+    android:background="#29274C">
+    <include layout="@layout/fragment_toolbar_child_page"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <include layout="@layout/mission1"/>
+    <include layout="@layout/mission2"/>
+    <include layout="@layout/mission3"/>
+    <include layout="@layout/mission4"/>
+    <include layout="@layout/mission5"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

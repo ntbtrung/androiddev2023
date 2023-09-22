@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D6555E88"
+    android:layout_alignParentTop="true"
+
+    >
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="#00000000"
+       android:drawableLeft="@drawable/baseline_keyboard_return_24"
+       android:translationX="-5dp"
+       android:id="@+id/btnBack" />
+
+
+    <View
+        android:id="@+id/icon_2"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:background="@mipmap/icon2"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:drawableRight="@drawable/baseline_menu_24"
+        android:contentDescription="button"/>
+</LinearLayout>

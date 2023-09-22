@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menutest"
+    android:id="@+id/menupage"
+    android:background="#29274C"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#D6555E88">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/baseline_keyboard_return_24"
+        android:id="@+id/btnBack1" />
+
+
+    <View
+        android:id="@+id/icon_2"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:background="@mipmap/icon2"
+        android:layout_gravity="center"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notificatio"
+        android:layout_width="148dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="NOTIFICATIONS"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter_extrabold"
+        android:gravity="top"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#FFFFFF"
+        android:alpha="0.5"
+        app:cardCornerRadius="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="NASA Events"
+            android:fontFamily="@font/inter_extrabold"
+            android:textSize="20sp"
+            android:layout_marginVertical="20dp"
+            />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="NASA Images"
+            android:fontFamily="@font/inter_extrabold"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Configure Notifications for ISS Sightings"
+            android:fontFamily="@font/inter_extrabold"
+            android:textSize="20sp"
+            android:layout_marginVertical="20dp"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="148dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="ABOUT"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter_extrabold"
+        android:gravity="top"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#FFFFFF"
+        android:alpha="0.5"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/come_explor"
+                android:layout_width="315dp"
+                android:layout_height="146dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="13dp"
+                android:layout_alignParentTop="true"
+                android:text="Come explore with NASA and discover the latest images, videos, mission information, news, feature stories, tweets, NASA TV and featured content with the NASA app."
+                android:gravity="top"
+                android:fontFamily="@font/inter_extrabold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="13dp"
+                android:layout_alignParentTop="true"
+                android:text="Version: 0.0.1 Beta."
+                android:gravity="top"
+                android:fontFamily="@font/inter_extrabold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

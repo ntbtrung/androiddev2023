@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/newsest_upl"
+        android:layout_width="168dp"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:layout_alignParentTop="true"
+        android:text="Newsest Upload"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_extrabold"
+        android:gravity="top"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/video1row1"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/video2row1"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/video3row1"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:layout_alignParentTop="true"
+        android:text="Trending and popular"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_extrabold"
+        android:gravity="top"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/video1row2"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="15dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/video2row2"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/video3row2"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="168dp"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:layout_alignParentTop="true"
+        android:text="Interviews"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_extrabold"
+        android:gravity="top"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/live1row3"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="15dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/video2row3"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/vdeo3row3"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

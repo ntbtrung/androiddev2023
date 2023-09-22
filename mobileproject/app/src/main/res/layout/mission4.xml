@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#BEBEBE"
+    android:layout_marginTop="10dp">
+
+    <!-- Ảnh -->
+
+    <!-- Đoạn văn bản -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/mission4image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_extrabold"
+        android:textStyle="bold"
+        android:layout_marginLeft="130dp"
+        android:text="The International Space Station is a large spacecraft in orbit around Earth. It serves as a home where crews of astronauts and cosmonauts live."
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <!-- Nút -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail >>"
+        android:textColor="#1914FF"
+        android:textSize="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="285dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:background="@android:color/transparent"
+        />
+
+</RelativeLayout>
