@@ -2,6 +2,7 @@ package com.example.mobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -13,22 +14,69 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton new1;
+    ImageButton images;
+    ImageButton live;
+    ImageButton misson;
+    ImageButton video;
+    Button btnmenu1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
         new1 = findViewById(R.id.new1);
+        images = findViewById(R.id.btnimages);
+        live = findViewById(R.id.btnLive);
+        misson = findViewById(R.id.btnmisson);
+        video = findViewById(R.id.btnvideo);
+        btnmenu1 = findViewById(R.id.btnmenu);
         new1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (view.getId()==R.id.new1){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.new1InHomePage, new newpage()).commit();
-                }
+                Intent newpgageinten = new Intent(MainActivity.this, Newpage.class);
+                startActivity(newpgageinten);
             }
         });
 
+        images.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent imageintent = new Intent(MainActivity.this, ImageActivity.class);
+                startActivity(imageintent);
+            }
+        });
+
+        live.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent liveintent = new Intent(MainActivity.this, LiveActivity.class);
+                startActivity(liveintent);
+            }
+        });
+
+        btnmenu1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent menuintent = new Intent(MainActivity.this, menutest.class);
+                startActivity(menuintent);
+            }
+        });
+
+        misson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent missonintent = new Intent(MainActivity.this, MissonActivity.class);
+                startActivity(missonintent);
+            }
+        });
+
+        video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent videointent = new Intent(MainActivity.this, videoActivity.class);
+                startActivity(videointent);
+            }
+        });
 
 
     }

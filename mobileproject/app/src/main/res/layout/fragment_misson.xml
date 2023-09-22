@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp">
         <ImageButton
+            android:id="@+id/btnmisson"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:background="@mipmap/misson"

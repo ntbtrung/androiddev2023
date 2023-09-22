@@ -7,7 +7,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="#29274C"
-    android:id="@+id/homepage">
+    android:id="@+id/homepage"
+    >
+    <include layout="@layout/fragment_toolbar"
+        android:id="@+id/toolbar"/>
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -16,16 +19,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <include layout="@layout/fragment_toolbar"
-        android:id="@+id/toolbar"/>
+
     <include layout="@layout/fragment_new1"
         android:id="@+id/new1InHomePage"/>
-    <include layout="@layout/fragment_image"
-        android:id="@+id/image"/>
-    <include layout="@layout/fragment_video"
-        android:id="@+id/video"/>
-    <include layout="@layout/fragment_misson"
-        android:id="@+id/missons"/>
+
+        <include
+            android:id="@+id/image"
+            layout="@layout/fragment_image" />
+
+        <include
+            android:id="@+id/video"
+            layout="@layout/fragment_video" />
+
+        <include layout="@layout/fragment_misson"/>
     <include layout="@layout/fragment_live"
         android:id="@+id/live"/>
     </LinearLayout>

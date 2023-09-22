@@ -5,7 +5,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".new1"
     android:layout_marginVertical="20dp"
     android:layout_marginHorizontal="10dp"
     >
@@ -20,9 +19,7 @@
             android:scaleType="fitXY"
             android:src="@mipmap/new11"
             android:contentDescription="imageButton"
-            android:id="@+id/new1"
-            android:onClick="this"
-            tools:ignore="OnClick"/>
+            android:id="@+id/new1" />
     </androidx.cardview.widget.CardView>
 
 
