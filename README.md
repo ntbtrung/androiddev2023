@@ -10,12 +10,12 @@ Members of the project
 
 * Student's Names & IDs:
 
-    - Nguyễn Trịnh Bảo Trung - BI11-275
-    - Nguyễn Thành Trung - BI11-274
-    - Phạm Đức Minh - BA11-073
-    - Vi Văn Chiến - BA11-014
-    - Đỗ Thành Đạt - BI9-065
-    - Đỗ Minh Hoàng - BA11-045
+    - Nguyễn Trịnh Bảo Trung - BI11-275 >> Group Leader
+    - Nguyễn Thành Trung - BI11-274 >> Figma Designer
+    - Phạm Đức Minh - BA11-073 >> Back-end Developer
+    - Vi Văn Chiến - BA11-014 >> Back-end Developer
+    - Đỗ Thành Đạt - BI9-065 >> UML Desinger
+    - Đỗ Minh Hoàng - BA11-045 >> UML Desinger
 
 * Group ID: 27
 
