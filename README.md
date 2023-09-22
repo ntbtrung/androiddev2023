@@ -22,3 +22,19 @@ Members of the project
 Figma Design link
 ===================
 https://bit.ly/androiddev2023-g27-figmadesign
+
+Our Vision
+==========
+We create a Mobile App (based on the Nasa Mobile App by Nasa) for enthusiasts to access public content of Nasa, including:
++ Latest News articles
++ Enormous Image gallery
++ Ultra-High-Def Videos
++ Detailed Missions with its Schedules and even observing Sightings
++ 24/7 Livestream from the ISS
+
+Users are allowed to:
++ Search for their interest by Filtering categories or Look up for keywords
++ Save their progress for later 
++ Download their loved content for offline reading
+
+Futhermore, users can contact us to resolve their problem or help us to upgrade the system
