@@ -1,16 +1,12 @@
 package com.example.mobileproject;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton new1;
@@ -27,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         new1 = findViewById(R.id.new1);
         images = findViewById(R.id.btnimages);
         live = findViewById(R.id.btnLive);
-        misson = findViewById(R.id.btnmisson);
+        misson = findViewById(R.id.btnmission);
         video = findViewById(R.id.btnvideo);
         btnmenu1 = findViewById(R.id.btnmenu);
         new1.setOnClickListener(new View.OnClickListener() {

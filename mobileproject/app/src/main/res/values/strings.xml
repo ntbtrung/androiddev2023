@@ -2,5 +2,7 @@
     <string name="app_name">mobileproject</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="missions">missions</string>
+    <string name="missions_nschedules_nsightings">Missions\nSchedules\nSightings</string>
     <string name="NASA">NASA</string>
 </resources>

@@ -31,7 +31,7 @@
             android:id="@+id/video"
             layout="@layout/fragment_video" />
 
-        <include layout="@layout/fragment_misson"/>
+        <include layout="@layout/fragment_mission"/>
     <include layout="@layout/fragment_live"
         android:id="@+id/live"/>
     </LinearLayout>

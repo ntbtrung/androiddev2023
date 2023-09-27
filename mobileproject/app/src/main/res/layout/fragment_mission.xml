@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".misson"
+    tools:context=".mission"
     android:layout_marginHorizontal="10dp">
 
     <androidx.cardview.widget.CardView
@@ -12,12 +12,12 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp">
         <ImageButton
-            android:id="@+id/btnmisson"
+            android:id="@+id/btnmission"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:background="@mipmap/misson"
+            android:background="@mipmap/mission"
             android:scaleType="fitXY"
-            android:contentDescription="missons"
+            android:contentDescription="@string/missions"
             />
         <TextView
             android:layout_width="167dp"
@@ -27,7 +27,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/inter_extrabold"
             android:gravity="bottom"
-            android:text="Missions\nSchedules\nSightings"
+            android:text="@string/missions_nschedules_nsightings"
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
     </androidx.cardview.widget.CardView>
