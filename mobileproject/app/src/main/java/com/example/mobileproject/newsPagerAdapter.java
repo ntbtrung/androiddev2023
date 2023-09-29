@@ -1,15 +1,15 @@
+package com.example.mobileproject;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.mobileproject.latestnewsFragment;
-
-public class PagerAdapter extends FragmentPagerAdapter {
+public class newsPagerAdapter extends FragmentPagerAdapter {
 
     int tabcount;
 
-    public PagerAdapter(@NonNull FragmentManager fm, int behavior) {
+    public newsPagerAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
         tabcount = behavior;
     }
@@ -20,13 +20,13 @@ public class PagerAdapter extends FragmentPagerAdapter {
         switch (position){
 
             case 0:
-                return new latestnewsFragment();
+                return new newsLatestFragment();
 
             case 1:
-                return new twitterFragment();
+                return new newsTwitterFragment();
 
             case 2:
-                return new facebookFragment();
+                return new newsFacebookFragment();
 
             default:
                 return null;

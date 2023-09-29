@@ -1,10 +1,10 @@
 package com.example.mobileproject;
 
-public class ModelClass {
+public class newsModelClass {
 
     private String author,title,description,url,urlToImage,publishedAt;
 
-    public ModelClass(String author, String title, String description, String url, String urlToImage, String publishedAt) {
+    public newsModelClass(String author, String title, String description, String url, String urlToImage, String publishedAt) {
         this.author = author;
         this.title = title;
         this.description = description;

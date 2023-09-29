@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         new1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newpgageinten = new Intent(MainActivity.this, Newpage.class);
-                startActivity(newpgageinten);
+                Intent newPgageintent = new Intent(MainActivity.this, newsMainActivity.class);
+                startActivity(newPgageintent);
             }
         });
 

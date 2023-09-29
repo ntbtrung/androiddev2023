@@ -2,13 +2,13 @@ package com.example.mobileproject;
 
 import java.util.ArrayList;
 
-public class mainNews {
+public class newsMainPage {
 
     private String status;
     private String totalResults;
-    private ArrayList<ModelClass> articles;
+    private ArrayList<newsModelClass> articles;
 
-    public mainNews(String status, String totalResults, ArrayList<ModelClass> articles) {
+    public newsMainPage(String status, String totalResults, ArrayList<newsModelClass> articles) {
         this.status = status;
         this.totalResults = totalResults;
         this.articles = articles;
@@ -30,11 +30,11 @@ public class mainNews {
         this.totalResults = totalResults;
     }
 
-    public ArrayList<ModelClass> getArticles() {
+    public ArrayList<newsModelClass> getArticles() {
         return articles;
     }
 
-    public void setArticles(ArrayList<ModelClass> articles) {
+    public void setArticles(ArrayList<newsModelClass> articles) {
         this.articles = articles;
     }
 }

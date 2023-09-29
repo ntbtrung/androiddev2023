@@ -5,4 +5,5 @@
     <string name="missions">missions</string>
     <string name="missions_nschedules_nsightings">Missions\nSchedules\nSightings</string>
     <string name="NASA">NASA</string>
+    <string name="newest_upload">Newest Upload</string>
 </resources>

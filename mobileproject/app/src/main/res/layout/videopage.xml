@@ -11,7 +11,7 @@
         android:layout_alignParentLeft="true"
         android:layout_margin="15dp"
         android:layout_alignParentTop="true"
-        android:text="Newsest Upload"
+        android:text="@string/newest_upload"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:fontFamily="@font/inter_extrabold"
