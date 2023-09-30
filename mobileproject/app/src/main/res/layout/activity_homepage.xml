@@ -9,7 +9,7 @@
     android:background="#29274C"
     android:id="@+id/homepage"
     >
-    <include layout="@layout/fragment_toolbar"
+    <include layout="@layout/homepage_toolbar_default"
         android:id="@+id/toolbar"/>
 
     <ScrollView
@@ -20,19 +20,19 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <include layout="@layout/fragment_new1"
+    <include layout="@layout/homepage_to_news"
         android:id="@+id/new1InHomePage"/>
 
         <include
             android:id="@+id/image"
-            layout="@layout/fragment_image" />
+            layout="@layout/hompage_to_image" />
 
         <include
             android:id="@+id/video"
-            layout="@layout/fragment_video" />
+            layout="@layout/homepage_to_video" />
 
         <include layout="@layout/fragment_mission"/>
-    <include layout="@layout/fragment_live"
+    <include layout="@layout/homepage_to_live"
         android:id="@+id/live"/>
     </LinearLayout>
 

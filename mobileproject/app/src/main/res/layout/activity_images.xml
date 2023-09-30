@@ -12,21 +12,11 @@
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
         android:background="@color/white"
-        android:id="@+id/toolbarNews">
+        android:id="@+id/toolbarImages">
         <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical">
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:src="@drawable/baseline_keyboard_return_24"
-                android:id="@+id/buttonbackfromnews">
-
-            </androidx.appcompat.widget.AppCompatImageButton>
-
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -34,9 +24,7 @@
                 android:text="@string/NASA"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="#03A9F4"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true">
+                android:textColor="#03A9F4">
             </TextView>
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
@@ -45,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/include"
-        android:layout_below="@+id/toolbarNews"
+        android:layout_below="@+id/toolbarImages"
         app:tabTextColor="#618C8F"
         app:tabSelectedTextColor="#03A9F4"
         app:tabIndicatorColor="#03A9F4"
@@ -56,8 +44,9 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="latest news"
-            android:id="@+id/latestnews">
+            android:text="@string/astronomy_picture_of_the_day"
+            android:id="@+id/apod"
+            >
         </com.google.android.material.tabs.TabItem>
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"

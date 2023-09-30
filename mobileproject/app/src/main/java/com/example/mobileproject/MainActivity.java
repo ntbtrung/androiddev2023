@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_homepage);
         new1 = findViewById(R.id.new1);
         images = findViewById(R.id.btnimages);
         live = findViewById(R.id.btnLive);
