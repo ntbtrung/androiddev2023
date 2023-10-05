@@ -14,9 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobileproject"
         tools:targetApi="31">
-        <activity
-            android:name=".newsWebView"
-            android:exported="false" />
+
         <activity
             android:name=".videoActivity"
             android:exported="false">
@@ -46,7 +44,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".imagesActivity"
+            android:name=".imagesAPODActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
