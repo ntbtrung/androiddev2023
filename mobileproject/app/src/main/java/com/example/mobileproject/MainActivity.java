@@ -37,8 +37,12 @@ public class MainActivity extends AppCompatActivity {
         images.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent imageintent = new Intent(MainActivity.this, imagesAPODActivity.class);
+                Intent imageintent = new Intent(MainActivity.this, imagesPrimeActivity.class);
+                Intent imageSearchintent = new Intent(MainActivity.this, imagesSearchActivity.class);
+                Intent imageAPODintent = new Intent(MainActivity.this, imagesAPODActivity.class);
                 startActivity(imageintent);
+                startActivity(imageSearchintent);
+                startActivity(imageAPODintent);
             }
         });
 

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/nasa_item_layout.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/imageViewFull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/imageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:layout_marginLeft="3dp"
+        android:text="Title" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageID"
+        android:textColor="@color/black"
+        android:text="NASA ID"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="3dp"/>
+
+    <TextView
+        android:id="@+id/imageDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:text="Description"
+        android:maxLines="3"
+        android:layout_marginLeft="3dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Date Created:"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/imageDate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Center:"
+        android:padding="3dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/imageCenter"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keywords:"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/imageKeywords"/>
+
+
+</LinearLayout>

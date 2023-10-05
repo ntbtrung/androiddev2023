@@ -17,12 +17,22 @@
             android:layout_height="145dp"
             android:padding="0dp"
             android:scaleType="fitXY"
-            android:src="@mipmap/new11"
+            android:src="@mipmap/newsbutton"
             android:contentDescription="imageButton"
             android:id="@+id/new1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:text="News"
+            android:fadingEdge="horizontal"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
     </androidx.cardview.widget.CardView>
-
-
-
 
 </LinearLayout>

@@ -25,7 +25,8 @@
 
         <include
             android:id="@+id/image"
-            layout="@layout/hompage_to_image" />
+            layout="@layout/hompage_to_image"
+            android:layout_width="206dp" />
 
         <include
             android:id="@+id/video"
