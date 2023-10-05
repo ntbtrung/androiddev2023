@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         new1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newPgageintent = new Intent(MainActivity.this, newsMainActivity.class);
+                Intent newPgageintent = new Intent(MainActivity.this, newsActivity.class);
                 startActivity(newPgageintent);
             }
         });

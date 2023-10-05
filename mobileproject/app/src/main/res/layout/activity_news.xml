@@ -5,81 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".newsMainPage">
+    tools:context=".newsActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="0dp"
-        android:background="@color/white"
-        android:id="@+id/toolbarNews">
-        <RelativeLayout
+    <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical">
+        android:id="@+id/newswebview">
 
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:src="@drawable/baseline_keyboard_return_24"
-                android:id="@+id/buttonbackfromnews">
-
-            </androidx.appcompat.widget.AppCompatImageButton>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/NASA"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:textColor="#03A9F4"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true">
-            </TextView>
-        </RelativeLayout>
-    </androidx.appcompat.widget.Toolbar>
-
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/include"
-        android:layout_below="@+id/toolbarNews"
-        app:tabTextColor="#618C8F"
-        app:tabSelectedTextColor="#03A9F4"
-        app:tabIndicatorColor="#03A9F4"
-        app:tabIndicatorHeight="3.5dp"
-        android:layout_marginTop="0dp"
-        android:backgroundTint="@color/white">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="latest news"
-            android:id="@+id/latestnews">
-        </com.google.android.material.tabs.TabItem>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="twitter"
-            android:id="@+id/twitter">
-        </com.google.android.material.tabs.TabItem>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="facebook"
-            android:id="@+id/facebook">
-        </com.google.android.material.tabs.TabItem>
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/include"
-        android:layout_marginTop="0dp"
-        android:id="@+id/fragmentcontainer">
-
-    </androidx.viewpager.widget.ViewPager>
+    </WebView>
 </RelativeLayout>
