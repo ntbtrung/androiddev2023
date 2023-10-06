@@ -1,13 +1,13 @@
 package com.example.mobileproject;
 
 public class imagesItemsLinks {
-    private static String href;
+    private String href;
 
-    private String rel = "preview";
+    private String rel;
 
-    private String render = "image";
+    private String render;
 
-    public static String getHref() {
+    public String getHref() {
         return href;
     }
 

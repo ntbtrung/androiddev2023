@@ -1,5 +1,6 @@
 package com.example.mobileproject;
 
+import android.net.Uri;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,16 +16,15 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 public class NasaItemAdapter extends RecyclerView.Adapter<NasaItemAdapter.ViewHolder> {
-    private List<NasaItem> nasaItemList;
+    private final List<NasaItem> nasaItemList;
 
-    public NasaItemAdapter(List<NasaItem> nasaItemList) {
+    private NasaItem nasaItem;
+
+    public NasaItemAdapter(List<NasaItem> nasaItemList, NasaItem nasaItem) {
         this.nasaItemList = nasaItemList;
+        this.nasaItem = nasaItem;
     }
 
-    public void setNasaItemList(List<NasaItem> items) {
-        this.nasaItemList = items;
-        notifyDataSetChanged(); // Notify the adapter that the data has changed
-    }
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView imageTitle, imageID, imageDescription, imageDate, imageCenter, imageKeywords;
         ImageView imageViewFull;
@@ -42,7 +42,7 @@ public class NasaItemAdapter extends RecyclerView.Adapter<NasaItemAdapter.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.nasa_item_layout, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout_images, parent, false);
         return new ViewHolder(view);
     }
 
@@ -63,7 +63,7 @@ public class NasaItemAdapter extends RecyclerView.Adapter<NasaItemAdapter.ViewHo
         holder.imageKeywords.setText(keywordsText); // Set the single string to the TextView
 
         // Load the image using Picasso from the URL associated with nasaData
-        Picasso.get().load(imagesItemsLinks.getHref()).into(holder.imageViewFull);
+        Picasso.get().load((Uri) nasaItem.getLinks()).into(holder.imageViewFull);
     }
 
     @Override

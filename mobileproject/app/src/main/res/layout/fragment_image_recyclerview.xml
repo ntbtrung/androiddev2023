@@ -15,12 +15,16 @@
         >
 
     </androidx.appcompat.widget.SearchView>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        android:orientation="vertical">
-    </androidx.recyclerview.widget.RecyclerView>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            android:orientation="vertical">
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
 </LinearLayout>
