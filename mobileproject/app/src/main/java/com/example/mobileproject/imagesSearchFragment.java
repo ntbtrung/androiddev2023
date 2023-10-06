@@ -1,36 +1,44 @@
 package com.example.mobileproject;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
-import androidx.appcompat.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class imagesSearchActivity extends AppCompatActivity {
+public class imagesSearchFragment extends Fragment {
     private NasaApiService apiService;
-    private static final String TAG = imagesSearchActivity.class.getSimpleName();
+    private static final String TAG = imagesSearchFragment.class.getSimpleName();
     private RecyclerView recyclerView;
     private NasaItemAdapter adapter;
     private List<NasaItem> nasaItemList;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.nasa_recyclerview);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_image_recyclerview,null);
 
         apiService = RetrofitClient.getRetrofitInstance().create(NasaApiService.class);
-        recyclerView = findViewById(R.id.recyclerview);
+        recyclerView = v.findViewById(R.id.recyclerview);
         adapter = new NasaItemAdapter(nasaItemList);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
 
-        SearchView searchView = findViewById(R.id.searchview);
+        SearchView searchView = v.findViewById(R.id.searchview);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             @Override
@@ -45,19 +53,21 @@ public class imagesSearchActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        return v;
     }
 
     private void performSearch(String query,int page,String mediaType, int yearStart, int yearEnd) {
         Log.d(TAG, "Query: " + query);
         Call<NasaSearchResponse> call = apiService.search(query,page,mediaType,yearStart,yearEnd);
         call.enqueue(new Callback<NasaSearchResponse>() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onResponse(Call<NasaSearchResponse> call, Response<NasaSearchResponse> response) {
                 if (response.isSuccessful()) {
-                    NasaSearchResponse nasaResponse = response.body();
-                    assert nasaResponse != null;
-                    List<NasaItem> items = nasaResponse.getCollection().getItems();
-                    adapter.setNasaItemList(items);
+                    assert response.body() != null;
+                    nasaItemList.addAll(response.body().getCollection().getItems());
+                    adapter.notifyDataSetChanged();
                 } else {
                     Log.e(TAG, "API request failed with code: " + response.code());
                 }

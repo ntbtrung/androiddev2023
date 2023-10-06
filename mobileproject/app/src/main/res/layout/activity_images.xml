@@ -1,34 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".imagesPrimeActivity"
     android:orientation="vertical">
-    <include layout="@layout/homepage_toolbar_default">
+    <include layout="@layout/homepage_toolbar_default"
+        android:id="@+id/toolbarImages">
     </include>
 
-    <ScrollView
-        android:id="@+id/image_scrollview"
+    <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/include"
+        android:layout_below="@+id/toolbarImages"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/purple_200"
+        app:tabIndicatorHeight="3.5dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/black">
+        <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="today's picture"
+            android:id="@+id/apod"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/search"/>
+    </com.google.android.material.tabs.TabLayout>
 
-            <include
-                layout="@layout/nasa_recyclerview"
-                android:layout_width="408dp"
-                android:layout_height="wrap_content" />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="0dp"
+        android:id="@+id/fragmentcontainer">
 
-            <include
-                layout="@layout/activity_images_apod"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>

@@ -1,17 +1,22 @@
 package com.example.mobileproject;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.squareup.picasso.Picasso;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-public class imagesAPODActivity extends AppCompatActivity {
+public class imagesAPODFragment extends Fragment {
 
     private ImageView apodImageView;
     private TextView apodTitleTextView;
@@ -20,22 +25,24 @@ public class imagesAPODActivity extends AppCompatActivity {
     private imagesAPODNasaApiService apiService;
     private String apiKey = "Ik8WV87VrplVUZ3ehOm7nzSFuh9yaFNafi27MOam"; // Replace with your NASA API key
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_images_apod);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_images_apod,null);
 
         // Initialize views
-        apodImageView = findViewById(R.id.apodImageView);
-        apodTitleTextView = findViewById(R.id.apodTitleTextView);
-        apodDateTextView = findViewById(R.id.apodDateTextView);
-        apodExplanationTextView = findViewById(R.id.apodExplanationTextView);
+        apodImageView = v.findViewById(R.id.apodImageView);
+        apodTitleTextView = v.findViewById(R.id.apodTitleTextView);
+        apodDateTextView = v.findViewById(R.id.apodDateTextView);
+        apodExplanationTextView = v.findViewById(R.id.apodExplanationTextView);
 
         // Initialize Retrofit service
         apiService = imagesAPODRetrofitClient.getRetrofitInstance().create(imagesAPODNasaApiService.class);
 
         // Fetch APOD data
         fetchApodData();
+
+        return v;
     }
 
     private void fetchApodData() {

@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent imageintent = new Intent(MainActivity.this, imagesPrimeActivity.class);
-                Intent imageSearchintent = new Intent(MainActivity.this, imagesSearchActivity.class);
-                Intent imageAPODintent = new Intent(MainActivity.this, imagesAPODActivity.class);
+                Intent imageSearchintent = new Intent(MainActivity.this, imagesSearchFragment.class);
+                Intent imageAPODintent = new Intent(MainActivity.this, imagesAPODFragment.class);
                 startActivity(imageintent);
                 startActivity(imageSearchintent);
                 startActivity(imageAPODintent);
